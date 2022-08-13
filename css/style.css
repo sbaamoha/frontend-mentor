@@ -1,0 +1,64 @@
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    cursor: pointer;
+}
+a:hover{
+    color: inherit;
+}
+
+.list-items a{
+    font-weight: 300;
+    position: relative;
+
+}
+.list-items a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    height: 5px;
+    width: 0;
+    background: hsl(26, 100%, 55%); 
+    border-radius: 50px;
+    transition: 0.3s ;  
+}
+.list-items a:hover::after{
+    content: "";
+    width: 100%;
+}
+.left-nav{
+    align-self: flex-end;
+}
+.avatar{
+    position: relative;
+    cursor: pointer;
+}
+.avatar::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid hsl(26, 100%, 55%);
+    border-radius: 50%;
+}
+.avatar:hover::after{
+    width: 100%;
+}
+.button{
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+}
+.colored{
+    color: hsl(26, 100%, 55%);
+}
+.add-to-cart{
+    cursor: pointer;
+}
