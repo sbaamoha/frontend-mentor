@@ -43,14 +43,14 @@ a:hover{
     content: "";
     position: absolute;
     top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
-    bottom: 0;
-    border: 2px solid hsl(26, 100%, 55%);
+    border: 0px solid hsl(26, 100%, 55%);
     border-radius: 50%;
 }
 .avatar:hover::after{
-    width: 100%;
+    border: 2px;
 }
 .button{
     background-color: hsl(26, 100%, 55%);
